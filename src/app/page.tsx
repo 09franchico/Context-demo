@@ -1,3 +1,5 @@
+
+"use client"
 import Image from 'next/image'
 import { Header } from './shared/components/Header'
 import { LoggedUserProvider } from './shared/context/LoggedUser'

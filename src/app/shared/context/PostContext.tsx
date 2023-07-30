@@ -1,4 +1,4 @@
-"use client"
+
 import { Post } from "@/app/@types/Post";
 import { Dispatch, ReactNode, createContext, useReducer, useEffect } from "react";
 import { PostActions, postReducer } from "../reducers/PostReducer";
