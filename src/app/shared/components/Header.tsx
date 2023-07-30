@@ -12,7 +12,7 @@ export const Header = () => {
     }
 
     return (
-        <div className="bg-red-500 justify-between flex m-10 h-10 items-center rounded-lg">
+        <div className="bg-red-800 justify-between flex m-10 h-10 items-center rounded-lg">
             <h2 className="ml-5">Meu header SISTEMA</h2>
 
             {loggeUserCtx?.name &&
