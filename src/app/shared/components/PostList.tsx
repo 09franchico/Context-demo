@@ -1,9 +1,9 @@
 
 import { useContext, useState } from "react"
-import { PostContext } from "../context/PostContext"
+import { PostContext, usePost } from "../context/PostContext"
 
 export const PostList = ()=>{
-    const postCtx = useContext(PostContext)
+    const postCtx = usePost();
 
     const [titleInput, setTitleInput] = useState('');
     const [bodyInput, setBodyInput] = useState('')

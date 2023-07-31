@@ -1,6 +1,6 @@
 
 import { Post } from "@/app/@types/Post";
-import { Dispatch, ReactNode, createContext, useReducer, useEffect } from "react";
+import { Dispatch, ReactNode, createContext, useReducer, useEffect, useContext } from "react";
 import { PostActions, postReducer } from "../reducers/PostReducer";
 
 const KEYSTORE = 'postContext'
@@ -10,8 +10,12 @@ type PostContextType = {
     dispatch: Dispatch<PostActions>
 }
 
+//criacao do context
 export const PostContext = createContext<PostContextType | null>(null)
 
+
+
+//criacao do provider
 export const PostProvider = ({ children }: { children: ReactNode }) => {
 
     // config reducerPost
@@ -32,3 +36,6 @@ export const PostProvider = ({ children }: { children: ReactNode }) => {
 
     )
 }
+
+//criacao de hoock para o context
+export const usePost = () =>  useContext(PostContext);
