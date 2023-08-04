@@ -45,7 +45,7 @@ export const PostList = () => {
             <div className=" mt-10 flex justify-center items-center">
                 <div className="flex flex-row flex-1 flex-wrap">
                     {postCtx?.posts.map((item) => (
-                        <div className="border p-4 m-5 w-96">
+                        <div className="border p-4 m-5 w-96 rounded-md">
                             <h1>{item.title}</h1>
                             <h3 key={item.id}>{item.body}</h3>
                             <button
